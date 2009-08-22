@@ -1,9 +1,9 @@
 require 'pp'
 #
-# Cookbook Name:: thinking_sphinx
+# Cookbook Name:: ultrasphinx
 # Recipe:: default
 #
-#if_app_needs_recipe("thinking_sphinx") do |app,data,index|
+#if_app_needs_recipe("ultrasphinx") do |app,data,index|
 
 if ['solo', 'app', 'app_master'].include?(node[:instance_role])
 
