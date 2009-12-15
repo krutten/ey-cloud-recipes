@@ -21,7 +21,7 @@ end
  
 if (node[:instance_role] == 'db_master')
  
-  cron "eybackup" do
+  cron "ey-binlogs" do
     minute '00'
     hour '*/2'
     day '*'
