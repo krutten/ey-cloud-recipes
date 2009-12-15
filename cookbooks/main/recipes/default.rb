@@ -23,8 +23,8 @@ if (node[:instance_role] == 'db_master')
  
   cron "eybackup" do
     minute '00'
-    hour cron_hour
-    day '*/2'
+    hour '*/2'
+    day '*'
     month '*'
     weekday '*'
     command "cd /root/eydba/binary_logs/ && date >> binlog.log && ./binary_log_purge.rb >> binlog.log && date >> binlog.log"
