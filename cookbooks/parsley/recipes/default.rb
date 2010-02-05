@@ -14,7 +14,7 @@ if ['solo', 'app', 'app_master'].include?(node[:instance_role])
     execute "install_parsley" do
       command %Q{
         cd /var/cache/src && git clone git://github.com/krutten/parsley.git
-        cd parsley && ./build_install.sh
+        cd parsley && git pull ; ./build_install.sh
       }
     end
 end
