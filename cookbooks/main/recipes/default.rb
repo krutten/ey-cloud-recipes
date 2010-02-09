@@ -21,7 +21,7 @@
 #require_recipe 'resque'
 
 # uncomment to install parsley
-require_recipe 'parsley'
+#require_recipe 'parsley'
 
 # Recipe:: default
 #

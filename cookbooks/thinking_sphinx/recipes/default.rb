@@ -7,7 +7,7 @@ require 'pp'
 
 if ['solo', 'app', 'app_master'].include?(node[:instance_role])
 
-  run_for_app("rede") do |app_name, data|
+  run_for_app("appname") do |app_name, data|
   
     directory "/var/run/sphinx" do
       owner node[:owner_name]
